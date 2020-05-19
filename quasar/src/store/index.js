@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import VueNativeSock from 'vue-native-websocket'
 // import example from './module-example'
 
 Vue.use(Vuex)
+Vue.use(VueNativeSock, 'ws://rpiradio.local:3000')
 
 /*
  * If not building with SSR mode, you can
